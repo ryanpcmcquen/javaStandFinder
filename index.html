@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <link rel="icon" type="image/png" href="http://javastandfinder.com/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="http://javastandfinder.com/stylesheet.css" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true"></script>
+    <script>
+      var map;
+      function initialize() {
+        var mapOptions = {
+          zoom: 15,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map_canvas'),
+            mapOptions);
+        var familyImage  = "http://javastandfinder.com/coffeeCup.png";
+        var naughtyImage = "http://javastandfinder.com/redShoe.png"
+
+
+        var marker001 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.980838,-122.211598),
+            map: map, title:"13 Buffalos Coffee Co.", icon: familyImage, url: "https://maps.google.com/?q=47.980838,-122.211598"
+          });
+        google.maps.event.addListener(marker001, 'click', function() {
+        window.location.href = marker001.url;
+        });
+
+        var marker002 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.97965,-122.21407),
+            map: map, title:"T N A Latte", icon: familyImage, url: "https://maps.google.com/?q=47.97965,-122.21407"
+          });
+        google.maps.event.addListener(marker002, 'click', function() {
+        window.location.href = marker002.url;
+        });
+
+        var marker003 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.963434,-122.209959),
+            map: map, title:"Hillbilly Hotties", icon: naughtyImage, url: "https://maps.google.com/?q=47.963434,-122.209959"
+          });
+        google.maps.event.addListener(marker003, 'click', function() {
+        window.location.href = marker003.url;
+        });
+
+        var marker004 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.960854,-122.210133),
+            map: map, title:"Stiletti's", icon: naughtyImage, url: "https://maps.google.com/?q=47.960854,-122.210133"
+          });
+        google.maps.event.addListener(marker004, 'click', function() {
+        window.location.href = marker004.url;
+        });
+
+        var marker005 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.982068,-122.205147),
+            map: map, title:"Espresso Avenue", icon: familyImage, url: "https://maps.google.com/maps?q=47.982068,-122.205147"
+          });
+        google.maps.event.addListener(marker005, 'click', function() {
+        window.location.href = marker005.url;
+        });
+
+        var marker006 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.9666,-122.210704),
+            map: map, title:"Pick me up Espresso", icon: familyImage, url: "https://maps.google.com/maps?q=47.9666,-122.210704"
+          });
+        google.maps.event.addListener(marker006, 'click', function() {
+        window.location.href = marker006.url;
+        });
+
+        var marker007 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.915161,-122.234595),
+            map: map, title:"Stars & Stripes Espresso", icon: familyImage, url: "https://maps.google.com/maps?q=47.915161,-122.234595"
+          });
+        google.maps.event.addListener(marker007, 'click', function() {
+        window.location.href = marker007.url;
+        });
+
+        var marker008 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.909875,-122.239763),
+            map: map, title:"Mocha Way Espresso", icon: familyImage, url: "https://maps.google.com/maps?q=47.909875,-122.239763"
+          });
+        google.maps.event.addListener(marker008, 'click', function() {
+        window.location.href = marker008.url;
+        });
+
+        var marker009 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.89628,-122.264102),
+            map: map, title:"High Flying Espresso", icon: familyImage, url: "https://maps.google.com/maps?q=47.89628,-122.264102"
+          });
+        google.maps.event.addListener(marker009, 'click', function() {
+        window.location.href = marker009.url;
+        });
+
+        var marker010 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.90398,-122.245624),
+            map: map, title:"Gourmet Latte", icon: familyImage, url: "https://maps.google.com/maps?q=47.90398,-122.245624"
+          });
+        google.maps.event.addListener(marker010, 'click', function() {
+        window.location.href = marker010.url;
+        });
+
+        var marker011 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.97622,-122.201046),
+            map: map, title:"Stiletti's", icon: naughtyImage, url: "https://maps.google.com/maps?q=47.97622,-122.201046"
+          });
+        google.maps.event.addListener(marker011, 'click', function() {
+        window.location.href = marker011.url;
+        });
+
+        var marker012 = new google.maps.Marker( {
+          position: new google.maps.LatLng(47.979031,-122.201282),
+            map: map, title:"Bargreen's Coffee Co.", icon: familyImage, url: "https://maps.google.com/maps?q=47.979031,-122.201282"
+          });
+        google.maps.event.addListener(marker012, 'click', function() {
+        window.location.href = marker012.url;
+        });
+
+        // Try HTML5 geolocation
+        if(navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+            map.setCenter(pos);
+          }, function() {
+            handleNoGeolocation(true);
+          });
+        } 
+        else {
+          // Browser doesn't support Geolocation
+          handleNoGeolocation(false);
+        }
+      }
+      function handleNoGeolocation(errorFlag) {
+        if (errorFlag) {
+          var content = 'Error: The Geolocation service failed.';
+        } else {
+          var content = 'Error: Your browser doesn\'t support geolocation.';
+        }
+        var options = {
+          map: map,
+          position: new google.maps.LatLng(60, 105),
+          content: content
+        };
+        var infowindow = new google.maps.InfoWindow(options);
+        map.setCenter(options.position);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  <title>Java Stand Finder</title>
+  </head>
+  <body onload="initialize()">
+    <h3> <em>Java</em> Stand Finder</h3> <p>Copyright 2013 cloud2ground.org</p>  
+  <div id="map_canvas" style="width:100%; height:100%"></div>
+  </body>
+</html>
