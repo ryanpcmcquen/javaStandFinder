@@ -1,6 +1,7 @@
 Java Stand Finder is an attempt to improve (both informationally and functionally) online maps.
 
-It uses the Google Maps API with custom data and icons to present the user with their nearest Java stands, and through implicit icons, denotes whether those stands are family-friendly or not.
+It uses the Google Maps API with custom data and icons to present the user with their nearest Java stands, 
+and through implicit icons, denotes whether those stands are family-friendly or not.
 
 Future versions should include:
 
