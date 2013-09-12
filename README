@@ -6,5 +6,7 @@ Future versions should include:
 
 -A proper database of java stands
 -A marker to show the user's position
--The ability for users to add stands, or at the very least submit addresses
+-The ability for users to add stands, or at the very least submit addresses to then be vetted by the host
 -The ability to review Java stands
+
+Java Stand Finder is currently live at http://javastandfinder.com and uses HTML5 geolocation.
