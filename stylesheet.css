@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
   background: -webkit-linear-gradient(top, #45484d 0%,#000000 100%);
+  background: linear-gradient(to bottom, #45484d 0%,#000000 100%);
 }
 
 h3 {
